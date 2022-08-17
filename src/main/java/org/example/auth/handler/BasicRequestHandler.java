@@ -1,19 +1,15 @@
 package org.example.auth.handler;
 
+import lombok.NoArgsConstructor;
 import org.example.auth.excption.NotAuthenticatedException;
-import org.example.auth.Request.BasicRequest;
-import org.example.auth.Request.Request;
+import org.example.auth.request.BasicRequest;
+import org.example.auth.request.Request;
 
 /**
  * @author zaki
  */
+@NoArgsConstructor
 public class BasicRequestHandler extends BaseHandler{
-
-    public BasicRequestHandler(){}
-
-    public BasicRequestHandler(Handler handler){
-        this.setNextHandler(handler);
-    }
 
     public void handle(Request request) throws NotAuthenticatedException {
         if (request instanceof BasicRequest){

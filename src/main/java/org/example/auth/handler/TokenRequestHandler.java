@@ -1,19 +1,15 @@
 package org.example.auth.handler;
 
+import lombok.NoArgsConstructor;
 import org.example.auth.excption.NotAuthenticatedException;
-import org.example.auth.Request.Request;
-import org.example.auth.Request.TokenRequest;
+import org.example.auth.request.Request;
+import org.example.auth.request.TokenRequest;
 
 /**
  * @author zaki
  */
+@NoArgsConstructor
 public class TokenRequestHandler extends BaseHandler{
-
-    public TokenRequestHandler(){}
-
-    public TokenRequestHandler(Handler handler){
-        this.setNextHandler(handler);
-    }
     public void handle(Request request) throws NotAuthenticatedException {
         if (request instanceof TokenRequest){
             System.out.println("Handle TokenRequest Request Logic");

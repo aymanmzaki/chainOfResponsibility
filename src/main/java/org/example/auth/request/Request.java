@@ -1,4 +1,4 @@
-package org.example.auth.Request;
+package org.example.auth.request;
 
 /**
  * @author zaki

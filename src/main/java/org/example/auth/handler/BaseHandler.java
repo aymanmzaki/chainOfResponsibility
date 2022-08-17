@@ -5,7 +5,8 @@ package org.example.auth.handler;
  */
 public abstract class BaseHandler implements Handler {
     Handler next = null;
-    public void setNextHandler(Handler handler) {
+
+    public void setNextHandler(Handler handler)  {
         this.next = handler;
     }
 

@@ -1,6 +1,6 @@
 package org.example.auth;
 
-import org.example.auth.Request.Request;
+import org.example.auth.request.Request;
 import org.example.auth.excption.NotAuthenticatedException;
 import org.example.auth.handler.BasicRequestHandler;
 import org.example.auth.handler.TokenRequestHandler;
@@ -10,8 +10,8 @@ import org.example.auth.handler.TokenRequestHandler;
  */
 public class AuthManager {
 
-    BasicRequestHandler basicHandler ;
-    TokenRequestHandler tokenRequestHandler;
+    final BasicRequestHandler basicHandler ;
+    final TokenRequestHandler tokenRequestHandler;
 
     public AuthManager(){
         basicHandler=new BasicRequestHandler();

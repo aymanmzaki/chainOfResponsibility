@@ -1,6 +1,5 @@
-package org.example.auth.Request;
+package org.example.auth.request;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
